@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Fortis Construction — Maçonnerie, gros œuvre, rénovation et extensions.">
+  <title>Fortis Construction — Bâtir durablement</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script async src="https://tally.so/widgets/embed.js"></script>
+</head>
+<body>
+  <header class="hero" id="accueil">
+    <video class="hero__video" autoplay muted loop playsinline aria-hidden="true" poster="img/hero-fallback.svg">
+      <source src="https://cdn.pixabay.com/video/2022/12/22/143861-784164182_large.mp4" type="video/mp4">
+    </video>
+    <div class="hero__veil"></div>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand" href="#accueil" aria-label="Fortis Construction - accueil">
+        <img src="img/logo-fortis.svg" alt="Fortis Construction">
+      </a>
+
+      <button class="nav__toggle" id="menuBtn" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" id="desktopNav">
+        <a href="#services" data-i18n="nav.services">Nos services</a>
+        <a href="#projets" data-i18n="nav.projects">Nos projets</a>
+        <a href="#devis" data-i18n="nav.quote">Devis</a>
+        <a href="#apropos" data-i18n="nav.about">À propos</a>
+      </div>
+
+      <div class="nav__actions">
+        <label class="language" for="languageSelect">
+          <span class="sr-only">Language</span>
+          <select id="languageSelect" aria-label="Choisir la langue">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu" hidden>
+        <a href="#services" data-i18n="nav.services">Nos services</a>
+        <a href="#projets" data-i18n="nav.projects">Nos projets</a>
+        <a href="#devis" data-i18n="nav.quote">Devis</a>
+        <a href="#apropos" data-i18n="nav.about">À propos</a>
+      </div>
+    </nav>
+
+    <div class="hero__content container">
+      <p class="eyebrow eyebrow--light" data-i18n="hero.eyebrow">Fortis Construction</p>
+      <h1 data-i18n="hero.title">Construire solide.<br><em>Construire pour durer.</em></h1>
+      <p class="hero__lead" data-i18n="hero.text">Maçonnerie, gros œuvre, rénovation et extensions. Un chantier bien préparé, un travail propre, un résultat qui tient dans le temps.</p>
+      <div class="hero__buttons">
+        <a class="button button--solid" href="#devis" data-i18n="hero.cta">Demander un devis</a>
+        <a class="button button--ghost" href="#services" data-i18n="hero.more">Voir nos services</a>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#services" aria-label="Faire défiler">
+      <span data-i18n="hero.scroll">Découvrir</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </header>
+
+  <main>
+    <section class="section section--paper" id="services">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow" data-i18n="services.eyebrow">Ce que nous faisons</p>
+            <h2 data-i18n="services.title">Des bases solides, du gros œuvre à la finition.</h2>
+          </div>
+          <p class="section-head__text" data-i18n="services.intro">Nous intervenons sur les étapes qui demandent du savoir-faire, de la précision et une vraie maîtrise du chantier.</p>
+        </header>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <img src="img/service-1.svg" alt="Gros œuvre">
+            <div class="service-card__body"><span>01</span><h3 data-i18n="services.items.1.title">Gros œuvre</h3><p data-i18n="services.items.1.text">Fondations, dalles, murs porteurs et structures.</p></div>
+          </article>
+          <article class="service-card">
+            <img src="img/service-2.svg" alt="Maçonnerie">
+            <div class="service-card__body"><span>02</span><h3 data-i18n="services.items.2.title">Maçonnerie</h3><p data-i18n="services.items.2.text">Brique, pierre, parpaing et maçonnerie traditionnelle.</p></div>
+          </article>
+          <article class="service-card">
+            <img src="img/service-3.svg" alt="Rénovation">
+            <div class="service-card__body"><span>03</span><h3 data-i18n="services.items.3.title">Rénovation</h3><p data-i18n="services.items.3.text">Réhabilitation et remise à niveau de bâtiments existants.</p></div>
+          </article>
+          <article class="service-card">
+            <img src="img/service-4.svg" alt="Extensions">
+            <div class="service-card__body"><span>04</span><h3 data-i18n="services.items.4.title">Extensions</h3><p data-i18n="services.items.4.text">Agrandissements et surélévations intégrés à l’existant.</p></div>
+          </article>
+          <article class="service-card">
+            <img src="img/service-5.svg" alt="Terrassement">
+            <div class="service-card__body"><span>05</span><h3 data-i18n="services.items.5.title">Terrassement</h3><p data-i18n="services.items.5.text">Préparation du terrain, nivellement et excavation.</p></div>
+          </article>
+          <article class="service-card">
+            <img src="img/service-6.svg" alt="Étanchéité">
+            <div class="service-card__body"><span>06</span><h3 data-i18n="services.items.6.title">Étanchéité</h3><p data-i18n="services.items.6.text">Protection des fondations et toitures contre les infiltrations.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="projets">
+      <div class="container">
+        <header class="section-head section-head--dark">
+          <div>
+            <p class="eyebrow eyebrow--accent" data-i18n="projects.eyebrow">Quelques réalisations</p>
+            <h2 data-i18n="projects.title">Des chantiers pensés pour durer.</h2>
+          </div>
+          <p class="section-head__text" data-i18n="projects.intro">Résidentiel, rénovation ou professionnel : chaque projet est suivi avec la même exigence.</p>
+        </header>
+
+        <div class="project-grid">
+          <article class="project">
+            <img class="project__image" src="img/project-1.svg" alt="Villa contemporaine" data-i18n-attr="alt:projects.items.1.title">
+            <div class="project__body"><div class="project__number">01</div><p data-i18n="projects.items.1.type">Résidentiel</p><h3 data-i18n="projects.items.1.title">Villa contemporaine</h3><span data-i18n="projects.items.1.place">Construction neuve</span></div>
+          </article>
+          <article class="project">
+            <img class="project__image" src="img/project-2.svg" alt="Maison de caractère" data-i18n-attr="alt:projects.items.2.title">
+            <div class="project__body"><div class="project__number">02</div><p data-i18n="projects.items.2.type">Rénovation</p><h3 data-i18n="projects.items.2.title">Maison de caractère</h3><span data-i18n="projects.items.2.place">Réhabilitation complète</span></div>
+          </article>
+          <article class="project">
+            <img class="project__image" src="img/project-3.svg" alt="Atelier et véranda" data-i18n-attr="alt:projects.items.3.title">
+            <div class="project__body"><div class="project__number">03</div><p data-i18n="projects.items.3.type">Extension</p><h3 data-i18n="projects.items.3.title">Atelier & véranda</h3><span data-i18n="projects.items.3.place">Agrandissement</span></div>
+          </article>
+          <article class="project">
+            <img class="project__image" src="img/project-4.svg" alt="Local commercial" data-i18n-attr="alt:projects.items.4.title">
+            <div class="project__body"><div class="project__number">04</div><p data-i18n="projects.items.4.type">Professionnel</p><h3 data-i18n="projects.items.4.title">Local commercial</h3><span data-i18n="projects.items.4.place">Gros œuvre</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper" id="devis">
+      <div class="container narrow">
+        <header class="section-head section-head--stack">
+          <p class="eyebrow" data-i18n="quote.eyebrow">Votre projet</p>
+          <h2 data-i18n="quote.title">Parlons du chantier.</h2>
+          <p class="section-head__text" data-i18n="quote.intro">Décrivez votre besoin, joignez vos plans ou documents et nous reviendrons vers vous.</p>
+        </header>
+
+        <div class="tally-box">
+          <iframe id="tally-iframe" data-tally-src="https://tally.so/embed/ja8pxa?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="620" frameborder="0" marginheight="0" marginwidth="0" title="Demande de devis Fortis Construction"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="apropos">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow" data-i18n="about.eyebrow">Fortis Construction</p>
+          <h2 data-i18n="about.title">Le métier d’abord. Le chantier ensuite.</h2>
+        </div>
+        <div>
+          <p class="about-copy" data-i18n="about.text1">Fortis Construction accompagne particuliers et professionnels sur des projets de construction, de rénovation et d’agrandissement. Notre priorité : un chantier maîtrisé, des finitions soignées et une relation claire du premier échange à la livraison.</p>
+          <p class="about-copy" data-i18n="about.text2">Nous privilégions les solutions simples, robustes et adaptées au bâtiment. Chaque projet est suivi avec la même rigueur, quelle que soit sa taille.</p>
+          <div class="stats">
+            <div><strong>15+</strong><span data-i18n="about.stats.1">ans d'expérience</span></div>
+            <div><strong>200+</strong><span data-i18n="about.stats.2">chantiers livrés</span></div>
+            <div><strong>100%</strong><span data-i18n="about.stats.3">engagement</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand"><img src="img/logo-fortis-light.svg" alt="Fortis Construction"></div>
+      <div class="footer__links">
+        <a href="#services" data-i18n="nav.services">Nos services</a>
+        <a href="#projets" data-i18n="nav.projects">Nos projets</a>
+        <a href="#devis" data-i18n="nav.quote">Devis</a>
+        <a href="#apropos" data-i18n="nav.about">À propos</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 Fortis Construction</span>
+      <button class="legal-button" id="legalOpen" type="button" data-i18n="footer.legal">Mentions légales</button>
+    </div>
+  </footer>
+
+  <div class="modal" id="legalModal" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="legalTitle">
+      <button class="modal__close" id="legalClose" type="button" aria-label="Fermer">×</button>
+      <p class="eyebrow" data-i18n="footer.legal">Mentions légales</p>
+      <h2 id="legalTitle" data-i18n="legal.title">Informations légales</h2>
+      <p data-i18n="legal.text">Fortis Construction SAS, siège social en France. Les mentions administratives et coordonnées de contact doivent être remplacées par les informations réelles de l’entreprise avant publication.</p>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
